@@ -7,13 +7,13 @@
 ##  Project Overview
 This repository contains the data, spatial models, and statistical validation scripts for a Spatial Decision Support System (SDSS) designed to automate the prioritization of Blue-Green Infrastructure (BGI) in Southeast Queens. 
 
-The SDSS evaluates extreme rain vulnerability by integrating topographic data with social equity metrics, moving beyond standard flood mapping to explicitly prescribe localized, actionable asset management typologies. This framework aligns with the NYC DEP Cloudburst Resiliency Planning Study and the Copenhagen Cloudburst Management Plan.
+The SDSS evaluates extreme rain vulnerability by integrating topographic data with social equity metrics, moving beyond standard flood mapping to prescribe localized, actionable asset management typologies. This framework aligns with the NYC DEP Cloudburst Resiliency Planning Study and the Copenhagen Cloudburst Management Plan.
 
 ##  Repository Structure
 * `/data`: Contains the exported spatial analysis results (`se_queens_results.csv`). *Note: High-resolution raster inputs (TIF) are excluded due to file size constraints.*
 * `/models`: Contains the QGIS Graphical Model (`.qmodel`) and the categorized symbology template (`BGI_Master_Style.qml`).
-* `/scripts`: Contains the R-based statistical suite (`sdss_statistical_validation.R`) used for sensitivity analysis and outcome visualization.
-* `/maps`: Contains high-resolution, presentation-ready exports of the final BGI classification map.
+* `/scripts`: Contains the R-based statistical suite (`SDSS_statanalysis.R`) used for sensitivity analysis and outcome visualization.
+* `/maps`: Contains presentation-ready exports of the final BGI classification map.
 
 ##  Methodology & Scenarios
 The SDSS employs a Weighted Linear Combination (SAW) approach to evaluate census tracts across two primary scenarios, with all input variables (Impervious surfaces, 311 flood complaints, slope, and ACS poverty data) normalized to a 0–1 scale.
